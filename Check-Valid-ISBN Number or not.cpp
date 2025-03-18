@@ -3,6 +3,7 @@
 using namespace std;
 
 int main() {
+    //ISBN is a 10 digit Number that are divisible by 11
     string number = "0471958697";
     int length = number.length();
     int ans = 0, i = 0;
