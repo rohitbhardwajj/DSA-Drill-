@@ -9,6 +9,7 @@ int main() {
     
     while(n>0){
         int last_Digit = n%10;
+        if(ans>(INT_MAX/10)||ans<(INT_MIN/10))
         ans*=10;
         ans+=last_Digit;
         
