@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+    
     int n, rem;
     string ans = "";  
 
@@ -18,3 +19,38 @@ int main() {
 
     return 0;
 }
+// Approach-2
+
+// #include <iostream>
+// #include <bitset>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     cout << "Enter a Decimal number: ";
+//     cin >> n;
+
+//     cout << "Binary: " << bitset<8>(n) << endl;
+//     return 0;
+// }
+
+// Approach-3
+
+// #include <iostream>
+// using namespace std;
+
+// void decimalToBinary(int n) {
+//     if (n == 0) return; 
+    
+//     decimalToBinary(n >> 1);  
+//     cout << (n & 1);  
+// }
+
+// int main() {
+//     int n = 12;
+//     if (n == 0) cout << "0";  
+//     else decimalToBinary(n);
+    
+//     return 0;
+// }
+
