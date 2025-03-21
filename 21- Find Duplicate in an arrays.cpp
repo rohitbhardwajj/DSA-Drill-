@@ -46,6 +46,9 @@ int main()
 //     return 0;
 // }
 
+
+
+
 // approach-3
 
 // #include <iostream>
@@ -74,3 +77,6 @@ int main()
 //     cout << ans; 
 //     return 0;
 // }
+
+
+
