@@ -12,6 +12,7 @@ int main()
     cin>>target;
         int arry[n];
     
+        cout<<"Enter lement in an array : ";
     for(int i=0 ; i<n ; i++){
         cin>>arry[i];
     }
