@@ -27,3 +27,43 @@ int main() {
 
     return 0;
 }
+
+
+// approach------2
+
+
+
+// #include <iostream>
+// #include <string>
+// using namespace std;
+
+// int main() {
+//     string str;
+//     cout << "Enter a sentence: ";
+//     getline(cin, str);
+
+//     int freq[26] = {0};  
+
+   
+//     for (char ch : str) {
+//         if (isalpha(ch)) {  
+//             ch = tolower(ch);  
+//             freq[ch - 'a']++;  
+//         }
+//     }
+
+  
+//     char maxChar = 'a';
+//     int maxFreq = 0;
+//     for (int i = 0; i < 26; i++) {
+//         if (freq[i] > maxFreq) {
+//             maxFreq = freq[i];
+//             maxChar = i + 'a';
+//         }
+//     }
+
+//     cout << "Most frequent character: " << maxChar << " (occurs " << maxFreq << " times)" << endl;
+    
+//     return 0;
+// }
+
