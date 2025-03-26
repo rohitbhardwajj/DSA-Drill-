@@ -41,3 +41,47 @@ int main()
 
     return 0;
 }
+
+
+// approach-2
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cout << "Enter the size of the character array: ";
+//     cin >> n;
+
+//     char ch[n + 1];  
+
+//     cout << "Enter elements in ch array: ";
+//     for (int i = 0; i < n; i++) {
+//         cin >> ch[i];
+//     }
+//     ch[n] = '\0';
+
+//     int i = 0, j = n - 1;
+//     bool flag = true;  
+//     while (i < j) {   
+//       if(ch[i]!=ch[j]){
+//           flag= false;
+//           break;
+//       }
+//       i++;
+//       j--;
+//     }
+
+
+
+//     if (flag) {
+//         cout << "Yes, it's a palindrome";
+//     } else {
+//         cout << "Not a palindrome";
+//     }
+
+//     return 0;
+// }
+
