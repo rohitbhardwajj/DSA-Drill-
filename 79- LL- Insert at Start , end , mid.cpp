@@ -96,6 +96,7 @@ void printList(Node* head) {
     cout << endl;
 }
 
+
 int main() {
     Node* head = new Node(12);
     head->next = new Node(25);
@@ -121,3 +122,5 @@ int main() {
 
     return 0;
 }
+
+// insertion at the end of the array
