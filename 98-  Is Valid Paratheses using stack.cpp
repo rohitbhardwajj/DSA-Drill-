@@ -20,3 +20,35 @@ bool isValidParenthesis(string s) {
 
     return st.empty();
 }
+
+
+
+// leetcode
+
+
+
+class Solution {
+    public:
+        bool isValid(string s) {
+            stack<char> ans;
+    
+            for (char ch : s) {
+                if (ch == '(' || ch == '{' || ch == '[') {
+                    ans.push(ch);
+                } else {
+                    if (ans.empty()) return false;
+    
+                    if ((ch == ')' && ans.top() == '(') ||
+                        (ch == '}' && ans.top() == '{') ||
+                        (ch == ']' && ans.top() == '[')) {
+                        ans.pop();
+                    } else {
+                        return false;
+                    }
+                }
+            }
+    
+            return ans.empty(); 
+        }
+    };
+    
