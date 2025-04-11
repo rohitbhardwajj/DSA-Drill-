@@ -65,3 +65,60 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+// leetcode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class CustomStack {
+    public:
+        int *arr;
+        int size;
+        int top;
+    
+        CustomStack(int maxSize) {
+            arr = new int[maxSize];
+            size = maxSize;
+            top = -1;
+        }
+    
+        void push(int x) {
+            if (top < size - 1) {  // Fix: max index is size - 1
+                top++;
+                arr[top] = x;
+            }
+        }
+    
+        int pop() {
+            if (top >= 0) {
+                int val = arr[top];
+                top--;
+                return val;
+            }
+            return -1;  // Stack empty
+        }
+    
+        void increment(int k, int val) {
+            int limit = min(k, top + 1);  // Don’t go out of bounds
+            for (int i = 0; i < limit; i++) {
+                arr[i] += val;
+            }
+        }
+    };
+    
