@@ -28,3 +28,4 @@ bool findRedundantBrackets(string &s)
 
     return false; // no redundant brackets
 }
+// done
