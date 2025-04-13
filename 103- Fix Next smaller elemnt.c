@@ -14,3 +14,44 @@ vector<int> nextSmallerElement(vector<int> &arr, int n) {
 
     return ans;
 }
+
+
+
+
+
+// approahh-------------------2
+
+
+
+
+
+
+#include <vector>
+#include <stack>
+#include <algorithm> // for reverse
+using namespace std;
+
+void find(stack<int>& s, vector<int>& ans, int val) {
+    int nextSmaller = -1;
+    while(!s.empty() && s.top() >= val) {
+        s.pop();
+    }
+    if(!s.empty()) {
+        nextSmaller = s.top();
+    }
+    ans.push_back(nextSmaller);
+    s.push(val);
+}
+
+vector<int> nextSmallerElement(vector<int> &arr, int n) {
+    stack<int> s;
+    vector<int> ans;
+
+    for(int i = n - 1; i >= 0; i--) {
+        find(s, ans, arr[i]);
+    }
+
+    reverse(ans.begin(), ans.end());  // reverse to match original order
+    return ans;
+}
+
