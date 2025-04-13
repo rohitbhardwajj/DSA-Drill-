@@ -14,4 +14,28 @@ public:
 };
 
 
+// approach---------------2
+
+
+class Solution {
+    public:
+        int numJewelsInStones(string jewels, string stones) {
+            map<char, int> ans;
+    
+            // Count frequency of each stone
+            for (char c : stones) {
+                ans[c]++;
+            }
+    
+            int storeCount = 0;
+    
+            // Check for each jewel in map
+            for (char j : jewels) {
+                storeCount += ans[j];  // will add 0 if jewel not present
+            }
+    
+            return storeCount;
+        }
+    };
+    
 
