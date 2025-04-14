@@ -15,15 +15,6 @@ public:
         }
     }
 
-
-
-
-
-
-
-approach 2 -----------> use stack of pair 
-tc =  0(1);
-sc = 0(N);
     int top() {
          if(!s.empty()) {
             return s.top();
