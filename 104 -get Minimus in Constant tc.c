@@ -107,3 +107,59 @@ public:
         return -1; // Stack is empty
     }
 };
+
+
+
+// important algorithum with tc sc constant
+
+
+
+
+
+
+
+
+class MinStack {
+    stack<long long> s;
+    long long minElement;
+
+public:
+    void push(int val) {
+        if (s.empty()) {
+            s.push(val);
+            minElement = val;
+        } else {
+            if (val >= minElement) {
+                s.push(val);
+            } else {
+                // Encode
+                s.push(2LL * val - minElement);
+                minElement = val;
+            }
+        }
+    }
+
+    void pop() {
+        if (s.empty()) return;
+
+        long long topVal = s.top();
+        s.pop();
+
+        if (topVal < minElement) {
+            // Decode
+            minElement = 2 * minElement - topVal;
+        }
+    }
+
+    int top() {
+        if (s.empty()) return -1;
+
+        long long topVal = s.top();
+        return (topVal >= minElement) ? topVal : minElement;
+    }
+
+    int getMin() {
+        if (s.empty()) return -1;
+        return minElement;
+    }
+};
