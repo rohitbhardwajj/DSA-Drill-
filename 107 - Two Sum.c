@@ -17,3 +17,10 @@ public:
         return get(nums, target, 0);
     }
 };
+
+
+// approach2----------------->>>>>>>
+
+
+
+
