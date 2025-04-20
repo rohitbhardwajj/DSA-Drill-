@@ -42,7 +42,7 @@ void find(stack<int>& s, vector<int>& ans, int val) {
     ans.push_back(nextSmaller);
     s.push(val);
 }
-
+// kvj
 vector<int> nextSmallerElement(vector<int> &arr, int n) {
     stack<int> s;
     vector<int> ans;
