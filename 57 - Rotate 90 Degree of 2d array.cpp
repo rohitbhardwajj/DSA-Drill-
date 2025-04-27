@@ -18,7 +18,7 @@ int main() {
         }
     }
 
-    cout << "Spiral print of matrix: " << endl;
+  
   class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
