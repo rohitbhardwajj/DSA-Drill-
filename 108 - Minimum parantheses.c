@@ -20,7 +20,7 @@ public:
 };
 
 
-// approach -----------2
+// approach ------------2
 
 #include <bits/stdc++.h> 
 int findMinimumCost(string str) {
